@@ -12,19 +12,18 @@ const Login = () => {
     console.log("Username:", username);
     console.log("Password:", password);
     
-    // Simulated authentication logic, replace this with your actual authentication logic
+    
     if (username === "venky" && password === "venky") {
       const token = jwt.sign({ username }, 'your-secret-key');
-      localStorage.setItem('token', token); // Store token in local storage
+      localStorage.setItem('token', token); 
       router.push("/addition");
     } else if (username === "ram" && password === "ram") {
       const token = jwt.sign({ username }, 'your-secret-key');
-      localStorage.setItem('token', token); // Store token in local storage
+      localStorage.setItem('token', token); 
       router.push("/substraction");
     } else if (username === "jai" && password === "jai") {
       const token = jwt.sign({ username }, 'your-secret-key');
-      localStorage.setItem('token', token); // Store token in local storage
-      router.push("/multiplication");
+      localStorage.setItem('token', token); 
     } else {
       setError("Invalid credentials");
     }
