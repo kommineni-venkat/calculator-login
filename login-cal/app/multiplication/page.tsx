@@ -1,4 +1,3 @@
-// pages/calculator/multiplication.tsx
 "use client"
 import { useState } from 'react';
 const MultiplicationCalculator: React.FC = () => {

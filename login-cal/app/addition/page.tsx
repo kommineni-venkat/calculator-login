@@ -1,4 +1,3 @@
-// pages/calculator/addition.tsx
 "use client"
 import { useState } from 'react';
 
